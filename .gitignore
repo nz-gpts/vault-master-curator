@@ -1,0 +1,13 @@
+# Ignore SQLite databases
+*.db
+
+# Ignore log files
+*.log
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore system files
+.DS_Store
+Thumbs.db
