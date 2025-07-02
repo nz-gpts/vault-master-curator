@@ -1,80 +1,66 @@
-Vault Master Curation System
-Version 2.0
+# Vault Master Curator
 
-A powerful, database-integrated file curation tool for managing and tagging large personal or research archives.
+✨ A flexible, open-source toolkit to curate, index, and enrich personal or research knowledge vaults — from file chaos to crystal clarity.
 
-✨ Features
-Batch directory scanning
+---
 
-Smart metadata tagging (PDF, DOCX, text files)
+## What is this?
 
-SQLite-backed database for metadata storage
+**Vault Master Curator** helps you manage a large folder of knowledge files (Vault_Master_Data) by:
 
-Interactive command-line interface
+✅ Indexing files into a structured JSON manifest  
+✅ Applying consistent tags (with YAML definitions)  
+✅ Validating metadata against a clear schema  
+✅ Enabling repeatable, transparent vault cleanups  
+✅ Future-ready for AI-enhanced enrichment
 
-Extendable design for future AI or automation features
+---
 
-🛠️ Requirements
-Python 3.10+
+## Features
 
-Bash (standard on Linux)
+- Automated metadata indexing
+- Tag classification rules
+- Configurable JSON schemas
+- Easy to extend with new scripts
+- Bash & Python hybrid tooling
+- Open-source contributor friendly
 
-SQLite3
+---
 
-Python packages:
+## How it works
 
-PyPDF2
+1. Place your unstructured files in `Vault_Master_Data`  
+2. Run the ingest and indexing scripts  
+3. Enrich or tag them using interactive tools  
+4. Validate against the JSON schema  
+5. Use the index for search, backup, or further AI enrichment
 
-python-docx
+---
 
-🚀 Installation
-From your scripts folder:
+## Quick Start
 
-bash
-Copy
-Edit
+```bash
+git clone https://github.com/nz-gpts/vault-master-curator.git
+cd vault-master-curator
 pip install -r requirements.txt
-▶️ Usage
-Navigate to the Vault root:
 
-bash
-Copy
-Edit
-cd /media/amy/EXTERNAL/Vault_Master_Data
-Launch the batch curator:
 
-bash
-Copy
-Edit
-./_System/scripts/batch_curator.sh
-This will scan your priority directories and send files one by one to the interactive manager.
+Roadmap
+✅ initial scaffold
+✅ tagging structure
+✅ ingestion scripts
+⬜ advanced duplicate detection
+⬜ AI enrichment layer
+⬜ contributor documentation
 
-Use the interactive manager directly (optional):
+Contributing
+We welcome ideas and pull requests!
+See CONTRIBUTING.md for guidelines.
 
-bash
-Copy
-Edit
-python3 _System/scripts/interactive_file_manager.py
-The interactive prompts will guide you to:
+License
+MIT License — see LICENSE for details.
 
-preview file content
+Built with ❤️ by Amy @ NZGPTS
 
-enter or edit metadata
 
-store results in the database
 
-✅ Tested Environment
-Ubuntu 22.04 LTS
-
-Python 3.10
-
-Bash: /usr/bin/bash
-
-SQLite3: /usr/bin/sqlite3
-
-📌 Roadmap
-Add web UI (optional)
-
-Add fully automated batch mode
-
-Enhance error logging
