@@ -1,0 +1,9 @@
+tags:
+  - name: research
+    description: "Items relating to academic or business research."
+  - name: project
+    description: "Files linked to an active project."
+  - name: personal
+    description: "Personal archives, diaries, photos."
+  - name: reference
+    description: "General reference materials or guides."

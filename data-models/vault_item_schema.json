@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vault Item",
+  "description": "Defines a single vault file metadata record.",
+  "type": "object",
+  "properties": {
+    "filename": { "type": "string" },
+    "path": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "created": { "type": "string", "format": "date-time" },
+    "modified": { "type": "string", "format": "date-time" },
+    "notes": { "type": "string" }
+  },
+  "required": ["filename", "path"]
+}

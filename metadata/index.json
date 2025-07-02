@@ -1,0 +1,5 @@
+{
+  "vault_index": [],
+  "generated_at": "2025-07-03T00:00:00Z",
+  "description": "This is the master index for all curated vault items. Each entry should match vault_item_schema.json."
+}
